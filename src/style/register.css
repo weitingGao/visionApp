@@ -1,0 +1,75 @@
+#register {
+    text-align: center
+  }
+ #register input::-webkit-input-placeholder{ /*WebKit browsers*/
+        color: #bababa;
+        font: 90%;
+  }
+  #register .goback {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+  }
+  .goback a{
+    color: #666;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+   #register .goback img{
+     width: 20px;
+     height: auto;
+   }
+#register .login_form{
+  width: 80%;
+  height: 500px;
+  margin-left: 10%;
+  margin-top: 15%;
+  background: #f8f9fe;
+  border-radius:8px 8px 8px 8px ;
+  -moz-border-radius: 8px 8px 8px 8px ;
+  -webkit-border-radius:8px 8px 8px 8px ;
+}
+ #register .login_form input{
+  width: 85%;
+  border: none;
+  font-size: 100%;
+  background: #e2e2ec;
+  border-radius:8px 8px 8px 8px ;
+  -moz-border-radius: 8px 8px 8px 8px ;
+  -webkit-border-radius:8px 8px 8px 8px;
+  margin-top: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 4%;
+}
+#register .input_form{
+  margin-top:10%;
+}
+#register .login_title{
+  color: #555962;
+  padding-top:3%;
+  text-align: center;
+  font-size: 130%;
+  font-weight:bold;
+}
+#register .login_btn{
+  margin-top: 10%;
+  background: #83b2fa;
+  width: 90%;
+  margin-left: 5%;
+  color: #ffffff;
+  font-size: 130%;
+  font-weight: normal;
+  border-radius:8px 8px 8px 8px ;
+  -moz-border-radius: 8px 8px 8px 8px ;
+  -webkit-border-radius:8px 8px 8px 8px;
+}
+#register .login_tip{
+ margin-top: 60px;
+}
+#register .register_tip{
+  font-size: 20px;
+ color: cadetblue;
+ font-weight: bold;
+}

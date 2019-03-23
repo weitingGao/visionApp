@@ -1,0 +1,50 @@
+.findBox{width: 100%;height: auto;}
+.cts{
+	width: 86%;
+	height: 290px;
+	position: relative;
+	margin:auto;
+	margin-bottom: 15px;
+}
+.pic_box{
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-color: #E6CAFF;
+}
+.label{
+	position: absolute;
+	top: 5%;
+	left: 0;
+	background-color: #84C1FF;
+	color:#fff;
+	font-size: 16px;
+	width: 70px;
+}
+.find_authod{
+	position: absolute;
+	bottom: 6px;
+	left: 3%;
+}
+.info_box{
+	/*border:1px solid #666;*/
+	width: 100%;
+	height: 80px;
+	box-shadow: 0 0 10px #666;;
+}
+.title{
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	width: 90%;
+	padding-top: 5px;
+	text-align: center;
+}
+.subTitle{
+	text-align: left;
+	margin-left: 5%;
+	width: 90%;
+	padding-top: 5px;
+}

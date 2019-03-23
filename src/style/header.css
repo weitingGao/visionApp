@@ -1,0 +1,124 @@
+
+.header_box{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #84C1FF;
+	z-index: 99;
+}
+.head_left{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 2%;
+	top: 10px;
+	background-image: url(../assets/more.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.head_right{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 2%;
+	top: 10px;
+	background-image: url(../assets/add_icon.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.head_center{
+	width: 120px;
+	height: 50px;
+	position: absolute;
+	right: 50%;
+	transform: translateX(50%);
+	background-image: url(../assets/select.png);
+	background-repeat: no-repeat;
+	background-size: auto 60%;
+	background-position: center right;
+}
+.head_center select{
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	height: 100%;
+}
+.leftBox{
+    width: 60%;
+    position: fixed;
+    background: #e5e6e8;
+    height: 100%;  
+    left: 0;
+    
+}
+.Info_box{
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	top:5%;
+}
+.prople_attr{
+    width: 65px;
+    height: 65px;
+    border-radius:50%;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.people_info{
+	float: left;
+}
+.Info{
+	max-width: 110px;
+}
+.info_name{
+	color: #3287fe;
+    font-size: 28px;
+    font-weight: bold;
+    /*padding-top: 2%;*/
+}
+.Info span{
+	font-size: 16px;
+	color: #000;
+}
+.popup_Icon{
+	position: absolute;
+	left: 5%;
+	top:30%;
+}
+.popup_Icon li{
+	height: 50px;
+}
+.popup_Icon img,.icon4 img{
+	float: left;
+    width: 30px;
+    height: auto;
+    margin-right: 12px;
+}
+.popup_Icon div,.icon4 div{
+	font-size: 16px;
+	line-height: 35px;
+	color: #9fafbc;
+	float: left;
+}
+.icon4{
+	position: absolute;
+	left: 5%;
+	bottom: 10%;
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+

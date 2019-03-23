@@ -23,6 +23,13 @@ npm run dev
 
 完成一个初始化vue项目
 
+
+
+## 新安装的东西
+
+npm i vuex --s
+
+
 ## Build Setup
 > 一些命令
 

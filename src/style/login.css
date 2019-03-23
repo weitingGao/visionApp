@@ -1,0 +1,67 @@
+ #login{
+    text-align: center;
+  }
+#login  input::-webkit-input-placeholder{ /*WebKit browsers*/
+        color: #bababa;
+        font: 90%;
+        }
+#login .login_form{
+  width: 80%;
+  height: 500px;
+  margin-left: 10%;
+  margin-top: 15%;
+  background: #f8f9fe;
+  border-radius:8px 8px 8px 8px ;
+  -moz-border-radius: 8px 8px 8px 8px ;
+  -webkit-border-radius:8px 8px 8px 8px ;
+}
+#login .login_form input{
+  width: 85%;
+  border: none;
+  font-size: 100%;
+  background: #e2e2ec;
+  border-radius:8px 8px 8px 8px ;
+  -moz-border-radius: 8px 8px 8px 8px ;
+  -webkit-border-radius:8px 8px 8px 8px;
+  margin-top: 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+}
+#login .input_form{
+  margin-top:20%;
+}
+#login .login_title{
+  color: #555962;
+  padding-top:3%;
+  text-align: center;
+  font-size: 130%;
+  font-weight: bold;
+}
+#login .login_btn{
+  margin-top: 20%;;
+  background: #83b2fa;
+  width: 90%;
+  margin-left: 5%;
+  color: #ffffff;
+  font-size: 130%;
+  font-weight: normal;
+}
+#login .login_tip{
+ margin-top: 25%;
+}
+#login .login_tip .account_tip{
+  color: #bababa;
+  font-size: 95%;
+}
+#login .register_tip{
+  font-size: 120%;
+ color: cadetblue;
+ font-weight:normal;
+ padding-top: 2%;
+
+}
+#login .register_tip  a{
+  text-decoration: none;
+  color:#90b3ff;
+}
