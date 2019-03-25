@@ -9,7 +9,9 @@
 		            </option>
 		         </select>
 			</div>
-			<div class="head_right"></div>
+			<router-link to="/publish">
+				<div class="head_right"></div>
+			</router-link>
 		</div>
 
 		

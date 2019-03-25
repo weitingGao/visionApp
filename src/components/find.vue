@@ -32,33 +32,33 @@
 						username:'高伟廷',
 						label:'摄影',
 						publicTime:'2019.3.13',
-						img_cover:'../assets/cs01.jpg',
+						img_cover:require('../assets/cs01.jpg'),
 						p_title:'YOU are My girl',
-						p_describe:'yes , you see i now your name jenny'
+						p_describe:'yes , you see i now your name '
 					},
 					{
 						username:'高伟廷',
 						label:'摄影',
 						publicTime:'2019.3.13',
-						img_cover:'../assets/cs01.jpg',
+						img_cover:require('../assets/cs02.jpg'),
 						p_title:'YOU are My girl',
-						p_describe:'yes , you see i now your name jenny'
+						p_describe:'yes , you see i now your name '
 					},
 					{
 						username:'高伟廷',
 						label:'摄影',
 						publicTime:'2019.3.13',
-						img_cover:'../assets/cs01.jpg',
+						img_cover:require('../assets/cs03.jpg'),
 						p_title:'YOU are My girl',
-						p_describe:'yes , you see i now your name jenny'
+						p_describe:'yes , you see i now your name '
 					},
 					{
 						username:'高伟廷',
 						label:'摄影',
 						publicTime:'2019.3.13',
-						img_cover:'../assets/cs01.jpg',
+						img_cover:require('../assets/cs04.jpg'),
 						p_title:'YOU are My girl',
-						p_describe:'yes , you see i now your name jenny'
+						p_describe:'yes , you see i now your name '
 					},
 
 				]

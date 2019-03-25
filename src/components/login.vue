@@ -38,5 +38,6 @@ import { MessageBox } from 'mint-ui';
   }
 </script>
 <style scoped>
+
  @import "../style/login.css";
 </style>

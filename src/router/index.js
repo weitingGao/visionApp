@@ -7,6 +7,8 @@ import header from '@/components/header'
 import find from '@/components/find'
 import follow from '@/components/follow'
 import inspiration from '@/components/inspiration'
+import publish from '@/components/publish'
+
 
 Vue.use(Router)
 // Vue.component('header-box',{
@@ -42,10 +44,16 @@ export default new Router({
       path: '/follow',
       name: 'follow',
       component: follow
-    },{
+    },
+    {
       path: '/inspiration',
       name: 'inspiration',
       component: inspiration
+    },
+    {
+      path: '/publish',
+      name: 'publish',
+      component: publish
     },
   ]
 
