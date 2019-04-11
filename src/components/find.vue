@@ -13,7 +13,7 @@
                         </div>
                         <div class="info_box">
                         	<p class="title"> {{findContain.p_title}}</p>
-                        	<p class="subTitle">{{findContain.p_describe}}</p>
+                        	<div class="subTitle">{{findContain.p_describe}}</div>
                         </div>
                         
                     </div>
@@ -29,7 +29,7 @@
 				nowPage:'find',
 				findContains:[
 					{
-						username:'高伟廷',
+						username:'kosen',
 						label:'摄影',
 						publicTime:'2019.3.13',
 						img_cover:require('../assets/cs01.jpg'),
@@ -38,7 +38,7 @@
 					},
 					{
 						username:'高伟廷',
-						label:'摄影',
+						label:'绘画',
 						publicTime:'2019.3.13',
 						img_cover:require('../assets/cs02.jpg'),
 						p_title:'YOU are My girl',
@@ -54,7 +54,7 @@
 					},
 					{
 						username:'高伟廷',
-						label:'摄影',
+						label:'油画',
 						publicTime:'2019.3.13',
 						img_cover:require('../assets/cs04.jpg'),
 						p_title:'YOU are My girl',
@@ -72,8 +72,8 @@
 		}
 	}
 </script>
-<style>
-	@import "../style/find.css";
+<style scoped lang="scss">
+	@import "../style/find.scss";
 </style>
 
 

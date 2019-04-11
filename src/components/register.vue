@@ -50,6 +50,6 @@ export default {
   }
 }
 </script>
-<style scoped>
- @import "../style/register.css";
+<style scoped lang="scss">
+ @import "../style/register.scss";
 </style>

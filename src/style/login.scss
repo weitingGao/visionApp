@@ -1,0 +1,69 @@
+@mixin border_style($stylename,$value, $options: -webkit -moz -o -ms){
+  #{$stylename}:$value;
+   @each $option in $options {
+      #{$option}-$stylename:$value;
+   }
+}
+
+#login{
+    text-align: center;
+    input::-webkit-input-placeholder{ /*WebKit browsers*/
+        color: #bababa;
+        font: 90%;
+    }
+}
+.login_form{
+  width: 80%;
+  height: 500px;
+  margin-left: 10%;
+  margin-top: 15%;
+  background: #f8f9fe;
+  @include border_style(border-radius,8px 8px 8px 8px);
+  input{
+    width: 85%;
+    border: none;
+    font-size: 100%;
+    background: #e2e2ec;
+    @include border_style(border-radius,8px 8px 8px 8px);
+    margin-top: 5%;
+    padding: 4% 0 4% 4%;
+  }
+}
+  
+.input_form{
+  margin-top:20%;
+}
+.login_title{
+  color: #555962;
+  padding-top:3%;
+  text-align: center;
+  font-size: 130%;
+  font-weight: bold;
+}
+.login_btn{
+  margin-top: 20%;;
+  background: #83b2fa;
+  width: 90%;
+  margin-left: 5%;
+  color: #ffffff;
+  font-size: 130%;
+  font-weight: normal;
+}
+.login_tip{
+ margin-top: 25%;
+}
+.login_tip .account_tip{
+  color: #bababa;
+  font-size: 95%;
+}
+.register_tip{
+  font-size: 120%;
+ color: cadetblue;
+ font-weight:normal;
+ padding-top: 2%;
+  a{
+    text-decoration: none;
+    color:#90b3ff;
+  }
+}
+ 

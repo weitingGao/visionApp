@@ -1,0 +1,23 @@
+*{padding: 0;margin: 0;}
+input,button,select,textarea{outline:none;border:none;background:none;}
+.find,.spiration,.follow{margin-top: 60px;}
+
+.mint-radiolist{
+	.mint-cell{
+		display: block;
+	    float: left;
+	    min-height: 30px;
+	}
+	.mint-cell-wrapper{
+		background-image:none;
+	}
+	.mint-cell:last-child{
+		background-image:none;
+	}
+	.mint-radiolist-title{
+		font-size: 15px;
+		margin-left: -7%;
+	}
+}
+
+

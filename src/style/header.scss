@@ -19,17 +19,13 @@
 	background-size: 100% 100%;
 }
 .head_right{
-	width: 30px;
-	height: 30px;
-	position: absolute;
+	@extend .head_left;
+	left: auto;
 	right: 2%;
-	top: 10px;
 	background-image: url(../assets/add_icon.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
 }
 .head_center{
-	width: 120px;
+	width: 90px;
 	height: 50px;
 	position: absolute;
 	right: 50%;
@@ -38,13 +34,15 @@
 	background-repeat: no-repeat;
 	background-size: auto 60%;
 	background-position: center right;
+	select{
+		color: #fff;
+		font-size: 24px;
+		font-weight: bold;
+		height: 100%;
+		width: 90px;
+	}
 }
-.head_center select{
-	color: #fff;
-	font-size: 30px;
-	font-weight: bold;
-	height: 100%;
-}
+
 .leftBox{
     width: 60%;
     position: fixed;
@@ -72,6 +70,10 @@
 }
 .Info{
 	max-width: 110px;
+	span{
+		font-size: 16px;
+		color: #000;
+	}
 }
 .info_name{
 	color: #3287fe;
@@ -79,34 +81,48 @@
     font-weight: bold;
     /*padding-top: 2%;*/
 }
-.Info span{
-	font-size: 16px;
-	color: #000;
-}
-.popup_Icon{
-	position: absolute;
-	left: 5%;
-	top:30%;
-}
-.popup_Icon li{
-	height: 50px;
-}
-.popup_Icon img,.icon4 img{
+
+
+@mixin popup_IconImg{
 	float: left;
     width: 30px;
     height: auto;
     margin-right: 12px;
 }
-.popup_Icon div,.icon4 div{
+
+@mixin popup_IconDiv{
 	font-size: 16px;
 	line-height: 35px;
 	color: #9fafbc;
 	float: left;
 }
+
+.popup_Icon{
+	position: absolute;
+	left: 5%;
+	top:30%;
+	li{
+		height: 50px;
+	};
+	img{
+		@include popup_IconImg
+	};
+	div{
+		@include popup_IconDiv
+	}
+
+}
+
 .icon4{
 	position: absolute;
 	left: 5%;
 	bottom: 10%;
+	img{
+		@include popup_IconImg
+	};
+	div{
+		@include popup_IconDiv
+	}
 }
 
    

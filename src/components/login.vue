@@ -37,7 +37,7 @@ import { MessageBox } from 'mint-ui';
     }
   }
 </script>
-<style scoped>
+<style scoped lang="scss">
 
- @import "../style/login.css";
+ @import "../style/login.scss";
 </style>

@@ -78,9 +78,11 @@ import { Popup } from 'mint-ui';
 			}
 
 		}
+
+
 	}
 </script>
 
-<style scoped>
- @import "../style/header.css";
+<style scoped lang="scss">
+ @import "../style/header.scss";
 </style>
