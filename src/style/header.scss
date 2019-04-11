@@ -25,22 +25,26 @@
 	background-image: url(../assets/add_icon.png);
 }
 .head_center{
-	width: 90px;
+	width: auto;
 	height: 50px;
 	position: absolute;
 	right: 50%;
 	transform: translateX(50%);
-	background-image: url(../assets/select.png);
-	background-repeat: no-repeat;
-	background-size: auto 60%;
-	background-position: center right;
-	select{
-		color: #fff;
-		font-size: 24px;
-		font-weight: bold;
-		height: 100%;
-		width: 90px;
-	}
+	font-size: 23px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 50px;
+	// background-image: url(../assets/select.png);
+	// background-repeat: no-repeat;
+	// background-size: auto 60%;
+	// background-position: center right;
+	// select{
+	// 	color: #fff;
+	// 	font-size: 24px;
+	// 	font-weight: bold;
+	// 	height: 100%;
+	// 	width: 90px;
+	// }
 }
 
 .leftBox{

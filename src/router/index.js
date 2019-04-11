@@ -4,11 +4,11 @@ import Router from 'vue-router'
 import register from '@/components/register'
 import login from '@/components/login'
 import header from '@/components/header'
-import find from '@/components/find'
+import index from '@/components/index'
 import follow from '@/components/follow'
 import inspiration from '@/components/inspiration'
 import publish from '@/components/publish'
-
+import pageContent from '@/components/pageContent'
 
 Vue.use(Router)
 // Vue.component('header-box',{
@@ -36,9 +36,9 @@ export default new Router({
       component: header
     },
     {
-      path: '/find',
-      name: 'find',
-      component: find
+      path: '/index',
+      name: 'index',
+      component: index
     },
     {
       path: '/follow',
@@ -54,6 +54,11 @@ export default new Router({
       path: '/publish',
       name: 'publish',
       component: publish
+    },
+    {
+      path: '/pageContent',
+      name: 'pageContent',
+      component: pageContent
     },
   ]
 

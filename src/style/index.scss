@@ -1,5 +1,33 @@
 
-.findBox{width: 100%;height: auto;}
+.tab-box{width: 100%;height: auto;}
+.page-tab-containe{margin-top: 90px;}
+.nav{
+	position: fixed;
+	height: 40px;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+	z-index: 2;
+	ul{
+		display: inline;
+		margin:auto;
+		line-height: 40px;
+		li{
+			display: inline-block;
+			margin-right: 20px;
+			line-height: 26px;
+			color: #84C1FF;
+			
+		}
+	}
+}
+.nav_btn_last{margin-right: 0;}
+.nav_btn_on{
+	border-bottom:2px solid #2894FF;
+	color: 	#2894FF !important;
+}
 .cts{
 	width: 86%;
 	height: 290px;

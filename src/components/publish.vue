@@ -1,6 +1,6 @@
 <template>
 	<div class="publish">
-		<router-link to="/find">
+		<router-link to="/index">
 			<img src="../assets/goback.png" class="back_icon">
 		</router-link>
 		<p class="topTitle">发布</p>
@@ -24,13 +24,13 @@
 			</div>
 			<p class="content_title">正文</p>
 			<div class="publish_contentBox">
-				<div class="publish_describe">
-					<textarea  placeholder="点击编辑图片介绍" v-model="img_describe"></textarea>
-				</div>
 				<div class="publish_img">
 					<img src="../assets/addPic.png" class="public_icon2">
 			        <input type="file" @change="getFile($event)">
 			        <p>添加图片</p>
+				</div>
+				<div class="publish_describe">
+					<textarea  placeholder="点击编辑图片介绍" v-model="img_describe"></textarea>
 				</div>
 			</div>
 			
@@ -80,6 +80,9 @@
 				  }
 				]
 			}
+		},
+		mounted:function(){
+			window.scrollTo(0,0);
 		},
 		methods:{
 			getFile:function(){

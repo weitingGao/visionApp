@@ -1,6 +1,11 @@
 
 $main_color:#84C1FF;
-
+@mixin web_style($stylename,$value, $options: -webkit -moz -o -ms){
+	#{$stylename}:$value;
+	 @each $option in $options {
+		#{$option}-$stylename:$value;
+	 }
+  }
 .publish{
 	width: 100%;
 	height: 100%;
@@ -95,14 +100,16 @@ $main_color:#84C1FF;
 .public_icon{
 	position: absolute;
 	right: 50%;
-	transform: translateX(50%);
+	// transform: translateX(50%);
+	@include web_style(transform,translateX(50%));
 	top: 10%;
 	width: 40px;
 }
 .public_icon2{
 	position: absolute;
 	right: 50%;
-	transform: translateX(50%);
+	// transform: translateX(50%);
+	@include web_style(transform,translateX(50%));
 	top: 10%;
 	width: 20px;
 }

@@ -31,7 +31,7 @@ import { MessageBox } from 'mint-ui';
         }else if(this.password==""){
           MessageBox('提示', '请输入密码');
         }else{
-
+          this.$router.push('/index')
         }
       }
     }

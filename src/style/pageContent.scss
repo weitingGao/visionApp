@@ -1,0 +1,138 @@
+.pageContent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.back_icon{
+    width: 25px;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    z-index: 2;
+}
+.coverImg{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.34;
+}
+.title_box{
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    text-align: center;
+    width: 78%;
+    color: #fff;
+    .label{
+        display: inline;
+        padding:0 10px;
+        margin:auto;
+        font-size: 14px;
+        background-color:#84C1FF;
+        border-radius: 5px;
+    }
+    .p_title{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+.author_box{
+    position: absolute;
+    left: 2%;
+    bottom: 1%;
+    width: auto;
+    height: auto;
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        display: block;
+        margin-bottom:5px;
+        margin-left: 5px;
+    }
+    div{
+        font-size: 12px;
+        color: #fff;
+    }
+}
+.contentBox{
+    position: relative;
+    width: 90%;
+    display: block;
+    margin:auto;
+    box-sizing: border-box;
+    height: auto;
+    padding:20px 0 50px 0;
+    .text_box{
+        width: 100%;
+        font-size: 14px;
+        text-align: left;
+        color: #000;
+        margin-bottom:12px;
+    }
+    .img_box{
+        margin-bottom:12px;
+        width: 100%;
+        height: auto;
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+.control_box{
+    position: fixed;
+    background-color: #fff;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    box-shadow: 0 0 10px #666;;
+    .like_box{
+        width: auto;
+        height: 100%;
+        float: left;
+        margin-left: 10px;
+        
+        img{
+            height: 32px;
+            width: auto;
+            display: block;
+            float: left;
+            margin-top: 7px;
+        }
+        span{
+            font-size: 14px;
+            color: #000;
+            float: left;
+            margin-left: 3px;
+            line-height: 46px;
+        }
+    }
+    .comment_box{
+        @extend .like_box;
+    }
+    .view_box{
+        @extend .like_box;
+        // margin-left: 0;
+        float: right;
+        margin-right: 10px;
+        img{
+            height: 26px;
+            margin-top: 10px;
+        }
+    }
+
+}

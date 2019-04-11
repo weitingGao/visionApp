@@ -3,11 +3,13 @@
 		<div class="header_box">
 			<div class="head_left"  @click="popupVisible=true"></div>
 			<div class="head_center">
-				<select v-model="selected"  @change="selectedType()" >
+				NEW VISION
+				<!-- 发现 关注 灵感 -->
+				<!-- <select v-model="selected"  @change="selectedType()" >
 		            <option v-for="option in options" v-bind:value="option.value"  >
 		                {{option.text}}
 		            </option>
-		         </select>
+		         </select> -->
 			</div>
 			<router-link to="/publish">
 				<div class="head_right"></div>
@@ -54,28 +56,28 @@ import { Popup } from 'mint-ui';
 		props:['nowPage'],
 		data(){
 			return{
-				selected:this.nowPage ,
-	            options: [
-	                { text: '发现', value: 'find' },
-	                { text: '关注', value: 'follow' },
-	                { text: '灵感', value: 'inspiration' }
-	            ],
+				// selected:this.nowPage ,
+	            // options: [
+	            //     { text: '发现', value: 'find' },
+	            //     { text: '关注', value: 'follow' },
+	            //     { text: '灵感', value: 'inspiration' }
+	            // ],
 	            popupVisible:false,
 			}
 		},
 
 		methods:{
-			selectedType:function(){
+			// selectedType:function(){
 				
-				if(this.selected=="find"){
-					this.$router.push({path:'/find'});
-				}else if(this.selected=="follow"){
-					this.$router.push({path:'/follow'});
-				}else if(this.selected=="inspiration"){
-					this.$router.push({path:'/inspiration'});
-				}
-				// console.log(this.selected,this.nowPage);
-			}
+			// 	if(this.selected=="find"){
+			// 		this.$router.push({path:'/find'});
+			// 	}else if(this.selected=="follow"){
+			// 		this.$router.push({path:'/follow'});
+			// 	}else if(this.selected=="inspiration"){
+			// 		this.$router.push({path:'/inspiration'});
+			// 	}
+			// 	// console.log(this.selected,this.nowPage);
+			// }
 
 		}
 
