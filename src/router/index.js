@@ -19,6 +19,7 @@ Vue.component('header-box',header)
 
 
 export default new Router({
+  mode:'history',
   routes: [
     {
       path: '/',

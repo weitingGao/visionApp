@@ -7,7 +7,7 @@
         <p class="login_title">注册</p>
         <div class="input_form">
             <input  placeholder="你的昵称" v-model="username">
-            <input  placeholder="你的手机号码" v-model.number="phone" maxlength="11" type="tel">
+            <input  placeholder="你的手机号码" v-model.number="phone" maxlength="11" type="tel" oninput="value=value.replace(/[^\d]/g,'')">
             <input  placeholder="你的邮箱" v-model="email">
             <input  placeholder="你的密码" v-model="password">
             <input  placeholder="请确认你的密码" v-model="repassword">
@@ -45,6 +45,13 @@ export default {
         MessageBox('提示', '两次密码不同');
       }else{
         Toast('注册成功');
+        let userData={};
+        userData.userName=this.username;
+        userData.phone=this.phone;
+        userData.password=this.password;
+        this.$store.commit('setUser',userData); 
+        // console.log(userData);
+        this.$router.push('/index');
       }
     }
   }

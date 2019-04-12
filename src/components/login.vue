@@ -3,7 +3,7 @@
      <div class="login_form">
         <p class="login_title">登录</p>
         <div class="input_form">
-            <input  placeholder="你的账号" v-model.number="phone" maxlength="11" type="tel">
+            <input  placeholder="你的账号(仅支持手机号)" v-model.number="phone" maxlength="11" type="tel" oninput="value=value.replace(/[^\d]/g,'')">
             <input  placeholder="你的密码" v-model="password">
         </div>
         <mt-button class="login_btn" size="large" @click="tologin()">登录</mt-button>
@@ -16,6 +16,7 @@
 </template>
 <script>
 import { MessageBox } from 'mint-ui';
+import { Toast } from 'mint-ui';
   export default {
     data () {
         return {
@@ -31,7 +32,17 @@ import { MessageBox } from 'mint-ui';
         }else if(this.password==""){
           MessageBox('提示', '请输入密码');
         }else{
-          this.$router.push('/index')
+          if(this.phone==this.$store.state.nowUser.phone&&this.phone!==''){
+            if(this.password==this.$store.state.nowUser.password&&this.password!==''){
+              Toast('登录成功');
+              this.$router.push('/index')
+            }else{
+              MessageBox('提示', '密码错误');
+            }
+          }else{
+            MessageBox('提示', '无该用户信息，请注册');
+          }
+          
         }
       }
     }

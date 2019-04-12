@@ -20,4 +20,17 @@ ul li{list-style-type:none;list-style:none}
 	}
 }
 
-
+/* 开始过渡阶段,动画出去阶段 */
+.fade-enter-active,.fade-leave-active{
+	transition: all 0.2s ease-out;
+  }
+  /* 进入开始 */
+  .fade-enter{
+	// transform: translateY(-500px);
+	opacity: 0;
+  }
+  /* 出去终点 */
+  .fade-leave-active{
+	// transform: translateY(500px);
+	opacity: 0;
+  }
