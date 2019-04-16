@@ -194,7 +194,7 @@ import { constants } from 'fs';
 		},
 		created:function(){
 			if(this.$store.state.publishFind.length>0){
-				console.log('有料');
+				// console.log('有料');
 				this.findContains=this.findContains.concat(this.$store.state.publishFind).reverse();
 				console.log(this.findContains)
 			}

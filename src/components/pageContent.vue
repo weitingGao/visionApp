@@ -81,7 +81,7 @@
 		},
 		mounted:function(){
 			let p_id=this.$route.query.p_id;
-			let newPublishFind=this.$store.state.publishFind;
+			let newPublishFind=this.$store.state.publishFind.reverse();
 			if(newPublishFind.length>0&&p_id<newPublishFind.length){
 				this.coverImg=newPublishFind[p_id].coverImg;
 				this.author=newPublishFind[p_id].author;

@@ -11,6 +11,7 @@ import "./style/public.scss"
 Vue.config.productionTip = false
 Vue.use(MintUI)
 
+//全局路由钩子，进入每个组件自动到顶部
 router.beforeEach(function (to,from,next) {
   window.scrollTo(0,0);
   next();
